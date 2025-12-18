@@ -1,0 +1,355 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="assets/css/reveal.css">
+    <link rel="stylesheet" href="assets/css/theme/white.css">
+    <link rel="stylesheet" href="assets/lib/css/zenburn.css">
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1 -->
+            <section style="text-align: center;">
+                <h1>JavaScript</h1>
+                <img src="assets/img/js.png" alt="js" style="width:200px; height:200px;">
+                <div>
+                    <div style="background-color: #fff; display: inline-flex; justify-content: center; padding: 10px; width: 300px;">
+                        <img src="./assets/img/lg.png" alt="logo" style="padding: 0; margin: 0; display: inline; background-color: transparent;" />
+                    </div>
+                    <br /><br />
+                    <small>Lecture by <a href="#" target="_blank">Trajan Stevkovski</a></small>
+                    <br />
+                </div>
+                <p style="font-size: 15px;">© 2025/26 Avenga Academy</p>
+            </section>
+
+            <!-- Slide 2 -->
+            <section style="text-align: left;">
+                <h2>Course overview</h2>
+                <ul>
+                    <li><b>Introduction to JavaScript</b></li>
+                    <li>Basics</li>
+                    <li>Variables and Values</li>
+                    <li>Control and Looping</li>
+                    <li>Objects and Properties</li>
+                    <li>Functions</li>
+                    <li>Events</li>
+                    <li>Ajax</li>
+                    <li>Jquery</li>
+                    <li>OOP - Object Oriented Programming</li>
+                </ul>
+            </section>
+
+            <!-- AI Prompt Slide: Understanding JS -->
+            <section style="text-align: left; background-color:#f0f0f0;">
+                <h2>🤖 Let's Ask AI!</h2>
+                <ul>
+                    <li>Hey AI, can you explain what JavaScript is in simple words?</li>
+                    <li>Can you tell me what interpreted code means, like a beginner-friendly explanation?</li>
+                    <li>Also, why is JavaScript different from Java?</li>
+                    <li>How does JavaScript fit together with HTML and CSS on a webpage?</li>
+                </ul>
+            </section>
+
+            <!-- Slide 3 -->
+            <section style="text-align: left;">
+                <h2>What is JavaScript?</h2>
+                <ul>
+                    <li>Developed by Brendan Eich in 1995, first known as LiveScript</li>
+                    <li>A <b>lightweight</b> programming language that runs in a Web browser</li>
+                    <li>Interpreted, not compiled</li>
+                    <li>JavaScript is <b>NOT</b> Java</li>
+                </ul>
+            </section>
+
+            <section style="text-align:center;">
+                <h2>What is JavaScript?</h2>
+                <img src="assets/img/javascriptExpl.png" height="250" alt="">
+            </section>
+
+            <section style="text-align: left;">
+                <h2>All together!</h2>
+                <img height="550" src="assets/img/rsz_1example.png" alt="">
+            </section>
+
+            <section style="text-align: left;">
+                <h2>Javascript History</h2>
+                <img src="assets/img/history.jpg" alt="" style="border: none;">
+            </section>
+
+            <!-- Slide 4 -->
+            <section style="text-align: left;">
+                <h2>What Can JavaScript Do?</h2>
+                <ul>
+                    <li>With JavaScript web pages are dynamic and interactive</li>
+                    <li>JavaScript can put dynamic text into an HTML page</li>
+                    <li>JavaScript can react to events</li>
+                    <li>JavaScript can be used to validate input data</li>
+                    <li>Allows parts of the page to appear, disappear, or move dynamically</li>
+                </ul>
+            </section>
+
+            <section style="text-align:center;">
+                <h2>How It works?</h2>
+                <img src="assets/img/howitsworks.png" alt="">
+            </section>
+
+            <!-- Slide 5 -->
+            <section style="text-align: left;">
+                <h2>Writing a JavaScript Program?</h2>
+                <ul>
+                    <li>The Web browser runs a JavaScript program when the page is first loaded or in response to events.</li>
+                    <li>Programs can be placed in HTML or external files</li>
+                    <li>Placing in external files allows hiding code from the user</li>
+                    <li>Code in HTML can be viewed by anyone</li>
+                </ul>
+            </section>
+
+            <!-- AI Prompt Slide: Placing JS -->
+            <section style="text-align: left; background-color:#e0f7fa;">
+                <h2>🤖 AI Prompt: Where to put JS?</h2>
+                <ul>
+                    <li>Hey AI, where is it best to put my JavaScript code — inside HTML or in a separate file?</li>
+                    <li>Why do you recommend that placement? Can you explain in simple words?</li>
+                </ul>
+            </section>
+
+            <!-- Exercise 1 -->
+            <section style="text-align: center;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+                <h1>Exercise 1</h1>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Open a Web Browser ex. Google Chrome and press F12</li>
+                    <li>Find the tab CONSOLE and navigate to it</li>
+                    <li>Use an alert box to display some greeting message like: <b>alert("Hello Avenga!");</b></li>
+                    <br>
+                    <small>Time to accomplish: 10 Minutes</small>
+                </ul>
+            </section>
+
+            <!-- Slide 6 -->
+            <section>
+                <h5>Bad solution</h5>
+                <img src="assets/img/script tags bad.png" alt="badjs">
+            </section>
+
+            <!-- Slide 7 -->
+            <section>
+                <h2>Implementing JavaScript</h2>
+                <small>TIP: In an external file before closing the BODY tags</small>
+                <img src="assets/img/external_file js.png" alt="goodjs">
+            </section>
+
+            <!-- Exercise 2 -->
+            <section style="text-align: center;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+                <h1>Exercise 2</h1>
+            </section>
+
+            <section>
+                <ul>
+                    <li>Open your code editor ex. Visual Studio Code</li>
+                    <li>Create a new document "index" with the extension .html</li>
+                    <li>Create a new document "script" or "app" with the extension .js (external JavaScript)</li>
+                    <li>Include an external .js file into HTML page</li>
+                    <li>Write your JavaScript program to display a message in the console <b>console.log("Hello from JavaScript!")</b></li>
+                    <br>
+                    <small>Time to accomplish: 15 Minutes</small>
+                </ul>
+            </section>
+
+            <!-- Variables -->
+            <section>
+                <h3>VARIABLES</h3>
+                <ul>
+                    <li>Variables are used to store data in memory</li>
+                    <li>Two steps required: <b>Declare</b> and <b>Initialize</b></li>
+                </ul>
+                <pre>
+<code class="hljs js" data-trim contenteditable>
+let number; // Declaration
+number = 5; // Initialization
+let number = 5; // Declaration and Initialization
+</code>
+                </pre>
+            </section>
+
+            <section>
+                <h3>Variables in Memory</h3>
+                <img src="assets/img/variableInmemory.png" style="width:800px; height:600px;" alt="variable">
+            </section>
+
+            <section>
+                <h2>VARIABLES</h2>
+                <ul>
+                    <li>Variable names must begin with a letter or underscore</li>
+                    <li>Variable names are case-sensitive</li>
+                    <li>Variables are untyped (VALUE IS THE TYPE!)</li>
+                    <li>Local vs Global variables explained</li>
+                </ul>
+            </section>
+
+            <!-- Primitive Types -->
+            <section style="text-align: left;" data-transition="slide" data-background="#007ac9" data-background-transition="slide">
+                <h1>Primitive Data Types</h1>
+                <ul>
+                    <li>Strings, Numbers, Undefined, Boolean, NULL</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Undefined vs Null</h3>
+                <code class="hljs js" data-trim contenteditable>
+let testVariable;
+alert(testVariable); // undefined
+alert(typeof testVariable); // undefined
+
+let testVariable = null;
+alert(testVariable); // null
+alert(typeof testVariable); // object
+
+null === undefined; // false
+null == undefined; // true
+null === null; // true
+                </code>
+            </section>
+
+            <!-- Comments -->
+            <section>
+                <h2>Comments</h2>
+                <ul>
+                    <li>Single Line: <b>// code here</b></li>
+                    <li>Multi Line: <b>/* code here */</b></li>
+                </ul>
+            </section>
+
+            <!-- Operators -->
+            <section>
+                <h3>Operators</h3>
+                <table>
+                    <tr><th>Operator</th><th>Example</th></tr>
+                    <tr><td>+</td><td>a + b</td></tr>
+                    <tr><td>-</td><td>a - b</td></tr>
+                    <tr><td>*</td><td>a * b</td></tr>
+                    <tr><td>/</td><td>a / b</td></tr>
+                    <tr><td>%</td><td>a % b</td></tr>
+                    <tr><td>++</td><td>a++</td></tr>
+                    <tr><td>--</td><td>a--</td></tr>
+                </table>
+            </section>
+
+            <!-- Comparison Operators -->
+            <section>
+                <h2>Comparison Operators</h2>
+                <table>
+                    <tr><th>Operator</th><th>Meaning</th></tr>
+                    <tr><td>&lt;</td><td>a &lt; b</td></tr>
+                    <tr><td>&lt;=</td><td>a &lt;= b</td></tr>
+                    <tr><td>&gt;</td><td>a &gt; b</td></tr>
+                    <tr><td>&gt;=</td><td>a &gt;= b</td></tr>
+                    <tr><td>==</td><td>a == b</td></tr>
+                    <tr><td>!=</td><td>a != b</td></tr>
+                </table>
+            </section>
+
+            <!-- Exercise: Feet to Meters -->
+            <section style="text-align: left;">
+                <h2>Exercise: Feet to Meters</h2>
+                <ul>
+                    <li>Write a JavaScript program to convert a length given in feet to meters.</li>
+                    <li>TIP: 1 feet = 0.3048 meters</li>
+                    <br>
+                    <small>Time to accomplish: 15 Minutes</small>
+                </ul>
+            </section>
+
+            <!-- Exercise: Rectangle Area (AI-enhanced) -->
+            <section style="text-align: left;">
+                <h2>Exercise: Rectangle Area 🤖</h2>
+                <ul>
+                    <li>Write JS program to calculate rectangle area: area = a * b</li>
+                    <li>AI Prompt: "Hey Copilot, help me write JS code to calculate rectangle area for sides a and b."</li>
+                    <li>Additional prompts:
+                        <ul>
+                            <li>Check variables used correctly</li>
+                            <li>Check arithmetic operation</li>
+                            <li>Ask for improvements/readability</li>
+                            <li>Ask how to show result in console and alert</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <small>Time to accomplish: 15 Minutes</small>
+                </ul>
+            </section>
+
+            <!-- Exercise: Circle Area -->
+            <!-- Exercise: Circle Area (AI-enhanced) -->
+<section style="text-align: left;">
+    <h2>Exercise: Circle Area 🤖</h2>
+    <ul>
+        <li>Write a JavaScript program that will calculate the area of a Circle</li>
+        <li>TIP: area = π * r²</li>
+        <li>AI/Copilot Prompt: "Hey Copilot, suggest appropriate variable names and initialization for the radius and area of a circle, then write the calculation code."</li>
+        <li>Additional prompts:
+            <ul>
+                <li>Check variables used correctly</li>
+                <li>Check arithmetic operation (π * r * r)</li>
+                <li>Ask how to show result in console and alert</li>
+                <li>Ask for readability improvements</li>
+            </ul>
+        </li>
+        <br>
+        <small>Time to accomplish: 15 Minutes</small>
+    </ul>
+</section>
+
+
+            <!-- Homework -->
+            <section style="text-align: center;" data-transition="slide" data-background="#007ac9">
+                <h2>HOMEWORK</h2>
+                <p>Write a JavaScript program that will calculate the price of 30 Phones, where the price of one phone
+                    is $119.95 and the tax rate is 5%.</p>
+                <br>
+                <p>E-mail:</p>
+                <p>trajanstevkovski@gmail.com</p>
+            </section>
+
+            <!-- End -->
+            <section>
+                <h1>THANK YOU</h1>
+                <h2>QUESTIONS?</h2>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="assets/lib/js/head.min.js"></script>
+    <script src="assets/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            history: true,
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+</body>
+
+</html>
