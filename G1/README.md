@@ -1,6 +1,6 @@
 # AI driven Basic JS development  📕
 
-    * Modules
+* Modules
     * Class 01
         * Presentation
             * [Introduction](./Class01/introduction/)
@@ -8,9 +8,13 @@
             * [Introduction Summary](./Class01/)
 
 
+* Homeworks
 
 
-    * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
+
+
+* The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
+
 ## Contact
 
 * Trainer: trajanstevkovski@gmail.com
