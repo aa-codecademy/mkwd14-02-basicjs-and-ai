@@ -22,6 +22,6 @@ You're building the core skills you'll use throughout your entire journey as a d
 ## Navigation 🧭
 
 * Groups
-  * [G1](/G1/)
-  * [G2](/G2/)
-  * [G3](/G3/)
+  * [G1](./G1/)
+  * [G2](./G2/)
+  * [G3](./G3/)
