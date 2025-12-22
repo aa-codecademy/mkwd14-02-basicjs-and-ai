@@ -6,7 +6,11 @@
             * [Introduction](./Class01/introduction/)
         * Summary
             * [Introduction Summary](./Class01/)
-
+    * Class 02
+        * Presentation
+            * [Strings, Control Structures](./Class02/presentation/)
+        * Summary
+            * [Strings, Control Structures Summary](./Class02/)
 
 * Homeworks
 
