@@ -20,6 +20,8 @@
 * Homeworks
     * Class 01-02
         * [Tasks](./Homeworks/Class01-02/)
+    * Class 03
+        * [Tasks](./Homeworks/Class03/)
 
 
 * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
