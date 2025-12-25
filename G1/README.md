@@ -11,6 +11,11 @@
             * [Strings, Control Structures](./Class02/presentation/)
         * Summary
             * [Strings, Control Structures Summary](./Class02/)
+    * Class 03
+        * Presentation
+            * [Switch and Functions](./Class03/presentation/)
+        * Summary
+            * [Switch and Functions Summary](./Class03/)
 
 * Homeworks
     * Class 01-02
