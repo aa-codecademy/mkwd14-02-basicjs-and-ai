@@ -1,5 +1,3 @@
-
-
 # 📘 JavaScript Homework – Functions & Logic
 
 ## General Rules (Read First)
