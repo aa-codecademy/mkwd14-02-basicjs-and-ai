@@ -16,6 +16,11 @@
             * [Switch and Functions](./Class03/presentation/)
         * Summary
             * [Switch and Functions Summary](./Class03/)
+    * Class 04
+        * Presentation
+            * [Arrays and Loops](./Class04/presentation/)
+        * Summary
+            * [Arrays and Loops Summary](./Class04/)
 
 * Homeworks
     * Class 01-02
