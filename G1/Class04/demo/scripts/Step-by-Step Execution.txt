@@ -1,0 +1,61 @@
+Step-by-Step Execution
+Initialization:
+
+let index = 0; initializes the index variable to 0. This variable keeps track of the current position in the daysOfWeek array.
+Condition Check:
+
+The while loop checks the condition: index < daysOfWeek.length.
+Initially, index = 0 and daysOfWeek.length = 7. Since 0 < 7 is true, the loop proceeds.
+First Iteration:
+
+The loop body executes:
+console.log(daysOfWeek[index]); prints daysOfWeek[0], which is 'Monday'.
+index += 1; increments index to 1.
+Second Iteration:
+
+The condition index < daysOfWeek.length is checked again. Now, index = 1 and 1 < 7 is true.
+The loop body executes:
+console.log(daysOfWeek[1]); prints 'Tuesday'.
+index += 1; increments index to 2.
+Third Iteration:
+
+The condition index < daysOfWeek.length is checked. Now, index = 2 and 2 < 7 is true.
+The loop body executes:
+console.log(daysOfWeek[2]); prints 'Wednesday'.
+index += 1; increments index to 3.
+Fourth Iteration:
+
+The condition index < daysOfWeek.length is checked. Now, index = 3 and 3 < 7 is true.
+The loop body executes:
+console.log(daysOfWeek[3]); prints 'Thursday'.
+index += 1; increments index to 4.
+Fifth Iteration:
+
+The condition index < daysOfWeek.length is checked. Now, index = 4 and 4 < 7 is true.
+The loop body executes:
+console.log(daysOfWeek[4]); prints 'Friday'.
+index += 1; increments index to 5.
+Sixth Iteration:
+
+The condition index < daysOfWeek.length is checked. Now, index = 5 and 5 < 7 is true.
+The loop body executes:
+console.log(daysOfWeek[5]); prints 'Saturday'.
+index += 1; increments index to 6.
+Seventh Iteration:
+
+The condition index < daysOfWeek.length is checked. Now, index = 6 and 6 < 7 is true.
+The loop body executes:
+console.log(daysOfWeek[6]); prints 'Sunday'.
+index += 1; increments index to 7.
+Exit Condition:
+
+The condition index < daysOfWeek.length is checked again. Now, index = 7 and 7 < 7 is false.
+The loop terminates, and no further iterations occur.
+Final Output
+The console.log statements produce the following output in the terminal:
+
+Key Concepts
+Initialization: The loop starts with index = 0.
+Condition: The loop runs as long as index < daysOfWeek.length.
+Increment: index += 1 ensures the loop progresses through the array.
+Termination: The loop stops when index reaches 7, which is equal to the length of the array.

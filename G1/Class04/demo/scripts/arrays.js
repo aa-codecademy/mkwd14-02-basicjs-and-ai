@@ -42,9 +42,27 @@ console.log(daysOfWeek);
 // adding items
 
 // n = dolzinata na nizata 0 -> n-1
-daysOfWeek[daysOfWeek.length] = 'New value';
+// daysOfWeek[daysOfWeek.length] = 'New value';
 
-// add single element
-daysOfWeek.push('new value added with push');
-//add multiple elenments
-daysOfWeek.push('first', 'second', 'third');
+// add single element at the eend
+// daysOfWeek.push('new value added with push');
+//add multiple elenments at the end
+// daysOfWeek.push('first', 'second', 'third');
+
+//add single elenment at the start
+// daysOfWeek.unshift(12345);
+//add mulitple elenment at the start
+// daysOfWeek.unshift(1, 2, 3, 4, 5);
+
+
+// remove elements from end
+// let lastValue = daysOfWeek.pop();
+// daysOfWeek.pop();
+// console.log(lastValue);
+
+// remove element from start
+// let firstElement = daysOfWeek.shift();
+// console.log(firstElement);
+
+let newArr = new Array();
+console.log(newArr);
