@@ -79,6 +79,10 @@ function messages2() {
 console.log(message2);  //This will print "hello G3"
 messages2(); //This will print "hello World"
 console.log(message2);  //This will print "hello World"
+message2 = "hello G3 again"; //we change the value of message2 in the global scope
+console.log(message2); //This will print "hello G3 again"
+messages2(); //This will print "hello World"
+console.log(message2); //This will print "hello World"
 
 let exampleVariable = 3;
 function outerFunction(){
