@@ -39,3 +39,37 @@ function oddOrEven(numbers, type) {
 // If the total points are 10 or more, print: "Reward Earned: Free Coffee!"
 // Otherwise, print: "Points needed for reward: [number]", calculating exactly 
 // how many more points are required to reach 10.
+
+function calculatePoints(purchase) {
+    // if (purchase > 20){
+    //     return 3;
+    // }
+    // if (purchase >= 10 || purchase <= 20) {
+    //     return 2;
+    // }
+    // if (purchase < 10) {
+    //     return 1;
+    // }
+
+    if (purchase > 20) {
+        return 3;
+    } else if (purchase >= 10 && purchase <= 20) {
+        return 2;
+    } else {
+        return 1;
+    }
+}
+
+let purchases = [5, 2, 2, 7, 22];
+
+let totalPoints = 0;
+for(let purchase of purchases) {
+    totalPoints += calculatePoints(purchase);
+}
+
+if (totalPoints > 10) {
+    console.log('Reward Earned: Free Coffee!');
+} else {
+    console.log('Points needed for reward: 10');
+    console.log(`You need ${10 - totalPoints} for a reward!`);
+}
