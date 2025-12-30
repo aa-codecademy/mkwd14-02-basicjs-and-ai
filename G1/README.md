@@ -16,10 +16,17 @@
             * [Switch and Functions](./Class03/presentation/)
         * Summary
             * [Switch and Functions Summary](./Class03/)
+    * Class 04
+        * Presentation
+            * [Arrays and Loops](./Class04/presentation/)
+        * Summary
+            * [Arrays and Loops Summary](./Class04/)
 
 * Homeworks
     * Class 01-02
         * [Tasks](./Homeworks/Class01-02/)
+    * Class 03
+        * [Tasks](./Homeworks/Class03/)
 
 
 * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
