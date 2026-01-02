@@ -27,7 +27,11 @@
         * [Tasks](./Homeworks/Class01-02/)
     * Class 03
         * [Tasks](./Homeworks/Class03/)
-
+    * Class 04-05
+        * [Tasks](./Homeworks/Class04-05/)
+* Winter homework
+    * [Guess the number game](./Homeworks/winter-brake/guess-the-number/)
+    * [Rock-Paper-Scissors](./Homeworks/winter-brake/rock-paper-scissors/)
 
 * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
 
