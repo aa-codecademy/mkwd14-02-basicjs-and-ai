@@ -21,6 +21,11 @@
             * [Arrays and Loops](./Class04/presentation/)
         * Summary
             * [Arrays and Loops Summary](./Class04/)
+    * Class 06
+        * Presentation
+            * [Objects](./Class06/presentation/)
+        * Summary
+            * [Objects Summary](./Class06/)
 
 * Homeworks
     * Class 01-02
