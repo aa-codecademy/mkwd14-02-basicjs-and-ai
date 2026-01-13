@@ -6,6 +6,7 @@ Change the page with JavaScript
 Change the text of all paragraphs and headers with javascript
 Note:The html must not be changed
 
+```html
 <div id="first" class="aDiv">
   <h1 id="myTitle">Yea! Cool page</h1>
   <p class="paragraph">
@@ -24,6 +25,7 @@ Note:The html must not be changed
   <h1>This should be changed</h1>
   <h3>And also this!</h3>
 </div>
+```
 
 ## Part 2
 Print all numbers from an array and the sum
