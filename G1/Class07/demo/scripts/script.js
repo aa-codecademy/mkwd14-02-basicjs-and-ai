@@ -16,3 +16,14 @@ h1.innerText += ' Ultra new content';
 console.log(main.innerHTML);
 main.innerHTML += '<p>Hello world!</p>';
 // main.innerHTML = '';
+
+
+// Changing CSS
+
+let pTag = document.getElementsByClassName('myParagraph')[0];
+pTag.style.color = 'Red';
+pTag.style.backgroundColor = 'blue';
+console.log(pTag.style);
+
+pTag.classList.add('demo');
+pTag.classList.remove('demo');
