@@ -1,4 +1,4 @@
-# Homework 4
+# Homework 5
 
 ## Part 1
 Create OBJECT animal with 2 properties and 1 method:
