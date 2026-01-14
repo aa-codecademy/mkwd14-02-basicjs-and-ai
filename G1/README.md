@@ -26,6 +26,13 @@
             * [Objects](./Class06/presentation/)
         * Summary
             * [Objects Summary](./Class06/)
+    * Class 07
+        * Presentation
+            * [DOM](./Class07/presentation/)
+        * Summary
+            * [DOM Summary](./Class07/)
+        * Ai questions
+            * [Query selectors](./Class07/ai-questions/)
 
 * Homeworks
     * Class 01-02
