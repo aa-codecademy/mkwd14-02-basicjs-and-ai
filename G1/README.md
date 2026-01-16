@@ -58,6 +58,9 @@
 
 * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
 
+* Extra materials
+    * [Javascript info](https://javascript.info/)
+
 ## Contact
 
 * Trainer: trajanstevkovski@gmail.com
