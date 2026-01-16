@@ -33,6 +33,11 @@
             * [DOM Summary](./Class07/)
         * Ai questions
             * [Query selectors](./Class07/ai-questions/)
+    * Class 08
+        * Presentaion
+            * [Events](./Class08/presentation/)
+        * Summary
+            * [Events Summary](./Class08/)
 
 * Homeworks
     * Class 01-02
