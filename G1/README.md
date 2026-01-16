@@ -49,6 +49,12 @@
 * Winter homework
     * [Guess the number game](./Homeworks/winter-brake/guess-the-number/)
     * [Rock-Paper-Scissors](./Homeworks/winter-brake/rock-paper-scissors/)
+* EXTRAVAGANZA SPECIAL
+    * [Readme first](./Homeworks/special/rules/)
+    * [Hangman](./Homeworks/special/hangman/)
+    * [Number to words](./Homeworks/special/number-to-words/)
+    * [Calculator](./Homeworks/special/calculator/)
+    
 
 * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
 
