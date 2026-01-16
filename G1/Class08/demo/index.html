@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button type="button" onclick="greet()">Click me!</button>
+    <!-- <button type="button" onclick="greet()">Click me!</button>
     <button type="button" ondblclick="countRabits()">Click me to count rabits!</button>
 
     <button id="btn" type="button">Traditional DOM event handler</button>
@@ -17,6 +17,21 @@
     <br>
     <h1 id="result"></h1>
 
-    <script src="./scripts/script.js"></script>
+    <button id="btn2" type="button">Remove event listener</button> -->
+    <!-- <input id="username" type="text" placeholder="Enter your username">
+    <button id="btn-username" type="button">Validate username</button> -->
+    
+    <div id="parent" style="width: 100px; height: 100px; background-color: blue;">
+        <button id="child">Click me!</button>
+    </div>
+
+    <div 
+        id="parent-result"
+        style="width: 100px; height: 100px; background-color: aquamarine;"
+        ></div>
+
+    <!-- <script src="./scripts/script.js"></script> -->
+    <!-- <script src="./scripts/username.js"></script> -->
+    <script src="./scripts/eventPropagation.js"></script>
 </body>
 </html>

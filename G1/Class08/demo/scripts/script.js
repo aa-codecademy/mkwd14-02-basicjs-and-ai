@@ -55,3 +55,38 @@ input.addEventListener('keypress', function(event) {
         console.log(history);
     }
 });
+
+// window.addEventListener('mousemove', function(e) {
+//     console.log(`currently at x: ${e.x} y: ${e.y}`);
+// });
+
+
+
+let btn2 = document.getElementById('btn2');
+
+// function removeEvLis() {
+//     console.log('clicked');
+//     btn2.removeEventListener('click', removeEvLis);
+// }
+
+// btn2.addEventListener('click', removeEvLis);
+
+// this will not work
+// btn2.addEventListener('click', function() {
+//     console.log('clicked');
+//     btn2.removeEventListener('click', function(){});
+// });
+
+// function a () {
+//     function b() {
+//         function c(){
+//             function d() {
+//                 debugger;
+//             }
+//             d()
+//         }
+//         c();
+//     }
+//     b();
+// }
+// a();
