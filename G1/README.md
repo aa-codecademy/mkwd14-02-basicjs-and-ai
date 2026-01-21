@@ -38,6 +38,9 @@
             * [Events](./Class08/presentation/)
         * Summary
             * [Events Summary](./Class08/)
+    * Class 09
+        * Exercises
+            * [Requirements](./Class09/)
 
 * Homeworks
     * Class 01-02
