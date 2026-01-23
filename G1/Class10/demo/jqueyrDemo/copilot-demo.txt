@@ -1,0 +1,35 @@
+<div id="container">
+  <h1 id="mainHeader">Hello</h1>
+  <p class="text">This is a paragraph</p>
+  <button id="btn">Click me</button>
+</div>
+
+<script>
+$(document).ready(function () {
+  $('#btn').on('click', function () {
+    $('#mainHeader').text('Hello, jQuery!');
+    $('.text').css({
+      color: 'blue',
+      fontSize: '20px'
+    });
+  });
+});
+</script>
+
+<div id="container">
+  <h1 id="mainHeader">Hello</h1>
+  <p class="text">This is a paragraph</p>
+  <button id="btn">Click me</button>
+</div>
+
+<script>
+const header = document.getElementById("mainHeader");
+const paragraph = document.querySelector(".text");
+const button = document.getElementById("btn");
+
+button.addEventListener("click", function() {
+    header.textContent = "Hello, jQuery!";
+    paragraph.style.color = "blue";
+    paragraph.style.fontSize = "20px";
+});
+</script>
