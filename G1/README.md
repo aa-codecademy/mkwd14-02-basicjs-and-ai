@@ -33,6 +33,19 @@
             * [DOM Summary](./Class07/)
         * Ai questions
             * [Query selectors](./Class07/ai-questions/)
+    * Class 08
+        * Presentaion
+            * [Events](./Class08/presentation/)
+        * Summary
+            * [Events Summary](./Class08/)
+    * Class 09
+        * Exercises
+            * [Requirements](./Class09/)
+    * Class 10
+        * Presentation
+            * [Jquery](./Class10/presentation/)
+        * Summary
+            * [Jquery Summary](./Class10/)
 
 * Homeworks
     * Class 01-02
@@ -44,8 +57,17 @@
 * Winter homework
     * [Guess the number game](./Homeworks/winter-brake/guess-the-number/)
     * [Rock-Paper-Scissors](./Homeworks/winter-brake/rock-paper-scissors/)
+* EXTRAVAGANZA SPECIAL
+    * [Readme first](./Homeworks/special/rules/)
+    * [Hangman](./Homeworks/special/hangman/)
+    * [Number to words](./Homeworks/special/number-to-words/)
+    * [Calculator](./Homeworks/special/calculator/)
+    
 
 * The repository for the example code [Link](https://github.com/aa-codecademy/mkwd14-02-basicjs-and-ai/tree/main/G1)
+
+* Extra materials
+    * [Javascript info](https://javascript.info/)
 
 ## Contact
 
