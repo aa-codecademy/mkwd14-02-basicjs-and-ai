@@ -19,9 +19,9 @@ let obj = {
 
 let jsonObj = JSON.stringify(obj);
 
-console.log(jsonObj);
+// console.log(jsonObj);
 
 let toJson = JSON.parse(jsonObj);
 
-console.log(toJson);
-console.log(toJson.name);
+// console.log(toJson);
+// console.log(toJson.name);
