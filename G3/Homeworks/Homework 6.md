@@ -1,4 +1,4 @@
-# Homework 5
+# Homework 6
 
 ## Part 1
 Change the page with JavaScript

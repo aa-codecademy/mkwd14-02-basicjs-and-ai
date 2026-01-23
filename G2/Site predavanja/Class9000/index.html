@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<meta name="description" content="JavaScript Modules Presentation">
+	<meta name="author" content="Ivan Jamandilovski">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/reveal.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/theme/white.css" id="theme">
+
+	<link rel="stylesheet" href="assets/lib/css/zenburn.css">
+
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi)
+			? 'assets/css/print/pdf.css'
+			: 'assets/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- Slide 1 -->
+			<section style="text-align:center;">
+				<h1>JavaScript</h1>
+				<div style="background:#fff; display:inline-flex; padding:10px; width:300px;">
+					<img src="./assets/img/lg.png" alt="logo"
+						style="border:none; box-shadow:none; background:transparent;" />
+				</div>
+				<br><br>
+				<small>Lecture by <strong>Ivan Jamandilovski</strong></small>
+				<p style="font-size:15px;">© 2025/26 Avenga Academy</p>
+			</section>
+
+			<!-- Slide 2 -->
+			<section>
+				<h2>Lesson Overview</h2>
+				<ul>
+					<li>Why large JavaScript files fail</li>
+					<li>JavaScript Modules (ESM)</li>
+					<li>Code Architecture</li>
+					<li>Separation of Concerns</li>
+				</ul>
+			</section>
+
+			<!-- Slide 3 -->
+			<section style="font-size:0.75em;">
+				<h2>Why This Topic?</h2>
+				<ul>
+					<li>Our code is getting bigger</li>
+					<li>One file does not scale</li>
+					<li>Real projects use multiple files</li>
+					<li>Today’s topic solves this problem</li>
+				</ul>
+			</section>
+
+			<!-- Slide 4 -->
+			<section>
+				<pre><code class="js" data-trim>
+// index.js
+fetchUsers();
+renderUsers();
+handleClick();
+handleErrors();
+// 400+ lines later...
+				</code></pre>
+				<p><strong>Problem:</strong> hard to read, hard to maintain</p>
+			</section>
+
+			<!-- Slide 5 -->
+			<section data-background="#007ac9">
+				<h1 style="color:#fff;">The New Concept</h1>
+			</section>
+
+			<!-- Slide 6 -->
+			<section>
+				<h2>JavaScript Modules</h2>
+				<ul>
+					<li>Split code into logical files</li>
+					<li>Each file has one responsibility</li>
+					<li>Files communicate explicitly</li>
+				</ul>
+			</section>
+
+			<!-- Slide 7 -->
+			<section>
+				<h2>What Is a Module?</h2>
+				<ul>
+					<li>A JavaScript file</li>
+					<li>Uses <code>export</code> and <code>import</code></li>
+					<li>Code is isolated by default</li>
+				</ul>
+			</section>
+
+			<!-- Slide 8 -->
+			<section>
+				<h3>Export</h3>
+				<pre><code class="js" data-trim>
+export function sum(a, b) {
+  return a + b;
+}
+				</code></pre>
+			</section>
+
+			<!-- Slide 9 -->
+			<section>
+				<h3>Import</h3>
+				<pre><code class="js" data-trim>
+import { sum } from "./math.js";
+				</code></pre>
+			</section>
+
+			<!-- Slide 10 -->
+			<section>
+				<h2>HTML Requirement</h2>
+				<pre><code class="html" data-trim>
+<script type="module" src="./js/main.js"></script>
+				</code></pre>
+			</section>
+
+			<!-- Slide 11 -->
+			<section>
+				<h2>Separation of Concerns</h2>
+				<table>
+					<tr><th>File</th><th>Responsibility</th></tr>
+					<tr><td>api.js</td><td>Fetching data</td></tr>
+					<tr><td>state.js</td><td>Storing state</td></tr>
+					<tr><td>dom.js</td><td>Rendering UI</td></tr>
+					<tr><td>events.js</td><td>User interactions</td></tr>
+					<tr><td>main.js</td><td>App entry point</td></tr>
+				</table>
+			</section>
+
+			<!-- Slide 12 -->
+			<section>
+				<h2>State</h2>
+				<pre><code class="js" data-trim>
+export const state = {
+  users: []
+};
+				</code></pre>
+				<p>Single source of truth</p>
+			</section>
+
+			<!-- Slide 13 -->
+			<section>
+				<h2>Data Flow</h2>
+				<pre>
+User Action
+   ↓
+Update State
+   ↓
+Render UI
+				</pre>
+			</section>
+			<!-- SINGLE SOURCE OF TRUTH – INTRO -->
+<section>
+  <h2>Single Source of Truth</h2>
+  <p><strong>What does it mean?</strong></p>
+  <p>
+    There is <strong>one place</strong> where the real data lives.<br>
+    Everything else is just a <em>visual representation</em>.
+  </p>
+</section>
+
+<!-- DEFINITION -->
+<section>
+  <h3>Definition</h3>
+  <blockquote>
+    Single Source of Truth means all application data lives in one place,
+    and the UI is built from that data.
+  </blockquote>
+</section>
+
+<!-- WHAT IS THE TRUTH -->
+<section>
+  <h3>What Is the “Truth”?</h3>
+  <ul>
+    <li><strong>State</strong> is the truth</li>
+    <li><strong>DOM</strong> is only the output</li>
+    <li>The UI does not store data</li>
+  </ul>
+</section>
+
+<!-- MENTAL MODEL -->
+<section>
+  <h3>Correct Mental Model</h3>
+  <pre>
+STATE (truth)
+   ↓
+RENDER UI (DOM)
+  </pre>
+  <p>JavaScript logic reads from <strong>state</strong>, not from the DOM.</p>
+</section>
+
+<!-- BAD APPROACH -->
+<section>
+  <h3>❌ Bad Approach</h3>
+  <p>Using the DOM as your data source:</p>
+  <pre><code class="js" data-trim>
+const items = document.querySelectorAll("li");
+console.log(items.length);
+  </code></pre>
+  <p>This creates hidden bugs and unpredictable behavior.</p>
+</section>
+
+<!-- GOOD APPROACH -->
+<section>
+  <h3>✅ Single Source of Truth</h3>
+  <pre><code class="js" data-trim>
+state.users.pop();
+renderUsers(state.users);
+  </code></pre>
+  <ul>
+    <li>Data changes first</li>
+    <li>UI updates automatically</li>
+    <li>Logic stays predictable</li>
+  </ul>
+</section>
+
+<!-- WHY SINGLE -->
+<section>
+  <h3>Why “Single” Matters</h3>
+  <ul>
+    <li>Two sources of truth will always desynchronize</li>
+    <li>DOM can be outdated or partially updated</li>
+    <li>State is always reliable</li>
+  </ul>
+</section>
+
+<!-- MODULE CONTEXT -->
+<section>
+  <h3>Single Source of Truth in Modules</h3>
+  <pre><code class="js" data-trim>
+// state.js
+export const state = {
+  users: []
+};
+  </code></pre>
+  <p>All modules read from the same state object.</p>
+</section>
+
+<!-- FRAMEWORK CONNECTION -->
+<section>
+  <h3>Why Frameworks Care About This</h3>
+  <ul>
+    <li>React, Vue, Svelte enforce this rule</li>
+    <li>UI is always derived from state</li>
+    <li>This makes apps scalable and safe</li>
+  </ul>
+</section>
+
+<!-- ANALOGY -->
+<section>
+  <h3>Simple Analogy</h3>
+  <ul>
+    <li><strong>Notebook</strong> = State</li>
+    <li><strong>Whiteboard</strong> = UI</li>
+  </ul>
+  <p>
+    You write in the notebook first,<br>
+    then rewrite the whiteboard when needed.
+  </p>
+</section>
+
+<!-- FINAL TAKEAWAY -->
+<section>
+  <h2>Key Takeaway</h2>
+  <blockquote>
+    The DOM is a view, not a database.
+  </blockquote>
+  <p>
+    Always update <strong>state</strong> first,<br>
+    then render the UI from it.
+  </p>
+</section>
+
+
+			<!-- Slide 14 -->
+			<section>
+				<h2>Modern JS vs jQuery</h2>
+				<table>
+					<tr><th>jQuery</th><th>Modern JS</th></tr>
+					<tr><td>Global $</td><td>Explicit imports</td></tr>
+					<tr><td>DOM focused</td><td>State focused</td></tr>
+					<tr><td>One file</td><td>Modules</td></tr>
+				</table>
+			</section>
+
+			<!-- Slide 15 -->
+			<section>
+				<h2>Why We Don’t Teach jQuery</h2>
+				<ul>
+					<li>Browsers are standardized</li>
+					<li>Modern JS is cleaner</li>
+					<li>Frameworks use modules</li>
+				</ul>
+			</section>
+
+			<!-- Slide 16 -->
+			<section>
+				<h2>What Comes Next?</h2>
+				<ul>
+					<li>Vue</li>
+					<li>React</li>
+					<li>Svelte</li>
+				</ul>
+				<p>Same concepts, more automation</p>
+			</section>
+
+			<!-- Slide 17 -->
+			<section>
+				<h1>Next Class</h1>
+				<ul>
+					<li>Exercises only</li>
+					<li>Build app using modules</li>
+					<li>No single-file solutions</li>
+				</ul>
+			</section>
+
+			<!-- Slide 18 -->
+			<section>
+				<h1>Thank You!</h1>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="assets/lib/js/head.min.js"></script>
+	<script src="assets/js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			transition: 'convex',
+			transitionSpeed: 'default',
+			mouseWheel: true,
+			dependencies: [
+				{
+					src: 'assets/plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				},
+				{ src: 'assets/plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+
+</body>
+</html>
