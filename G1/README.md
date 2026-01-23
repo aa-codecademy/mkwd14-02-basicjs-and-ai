@@ -41,6 +41,11 @@
     * Class 09
         * Exercises
             * [Requirements](./Class09/)
+    * Class 10
+        * Presentation
+            * [Jquery](./Class10/presentation/)
+        * Summary
+            * [Jquery Summary](./Class10/)
 
 * Homeworks
     * Class 01-02
