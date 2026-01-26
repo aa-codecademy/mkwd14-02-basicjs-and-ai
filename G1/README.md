@@ -46,6 +46,11 @@
             * [Jquery](./Class10/presentation/)
         * Summary
             * [Jquery Summary](./Class10/)
+    * Class 11
+        * Presentation
+            * [Ajax and Fetch](./Class11/presentation/)
+        * Summary
+            * [Ajax and Fetch Summary](./Class11/)
 
 * Homeworks
     * Class 01-02
