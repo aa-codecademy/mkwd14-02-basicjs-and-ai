@@ -36,7 +36,7 @@ function generatePeopleTable(people, element) {
                 <th>${person.name}</th>
                 <td>${person.birth_year}</td>
                 <td>${person.films.length}</td>
-                <td><button type='button' value='${person.name}'>More details</button></td>
+                <td><button type='button' value='${person.url}'>More details</button></td>
             </tr>
         `;
     }
@@ -69,4 +69,28 @@ function addPagingButtonsEventListeners(element) {
             fetchData(pageUrl);
         });
     }
+}
+
+
+tbody.addEventListener('click', function(event) {
+    event.preventDefault();
+    console.log(event.target);
+    if (event.target.nodeName === 'BUTTON') {
+        let urlWithId = event.target.value;
+        fetchPeopleById(urlWithId);
+    }
+});
+
+function fetchPeopleById(url) {
+    fetch(url)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            
+            console.log(data);
+        })
+        .catch(function(error) {
+            console.log(error);
+        })
 }
