@@ -6,7 +6,7 @@ $(document).ready(function() {
 
     myButton.click(function() {
         $.ajax({
-            url: "https://json1placeholder.typicode.com/users",
+            url: "https://jsonplaceholder.typicode.com/users",
             success: function(result){ //this function runs if the call is successful
                 console.log(result);
             },
